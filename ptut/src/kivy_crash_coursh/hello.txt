@@ -1,0 +1,3 @@
+How many space are in this txt file?
+How many new line characters are in this txt file?
+Find the numbers of  UPPER CASE characters. And also print the words.

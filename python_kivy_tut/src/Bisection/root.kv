@@ -1,0 +1,79 @@
+<Bis>:
+    Screen1:
+    Screen2:
+    #Screen3:
+<Screen1>:
+    name:'screen1'
+    BoxLayout:
+        orientation:'vertical'
+        BoxLayout:
+            size_hint_y:None
+            height:40
+            TextInput:
+                id:t1
+                text:'type the function as f(x)=0'
+            Button:
+                text:'submit'
+                on_press:root.input_taking()
+    
+    
+            Button:
+                text:'calculate'
+                on_press:app.root.tab_hed(),app.root.root_cal()
+            BoxLayout:
+                size_hint_x:None
+                width:50
+                
+                Button:
+                    on_press:app.root.current='screen2'
+                    
+                    
+        BoxLayout:
+            orientation:'vertical'
+            BoxLayout:
+                size_hint_y:None
+                height:30
+                TextInput:
+                    id:rn
+                    size_hint_x:None
+                    width:150
+                    text:'range(ex 20,30)'
+                Button:
+                    text:'.........Show the plot.........'
+                    
+                    on_release:root.plotting()
+                    
+                Button:
+                    text:'clear'
+                    size_hint_x:None
+                    width:150
+                    on_press:grph.clear_widgets()
+            BoxLayout:
+                id:grph
+    
+<Screen2>:
+    name:'screen2'
+    BoxLayout:
+        orientation:'vertical'
+        
+        BoxLayout:
+            size_hint_y:None
+            height:50
+            Button:
+                text:'show table'
+                on_press:root.pop_tab()
+            Button:
+                text:'Go to first screen'
+                on_press:app.root.current='screen1'
+        ScrollView:
+            GridLayout:
+                size_hint:None,None
+                size:800,1000
+                cols:4
+                id:gd
+
+        
+        
+        
+
+        

@@ -1,0 +1,33 @@
+<ScatterText>:
+ScatterText:
+	orientation:"vertical"
+	TextInput:
+		size_hint_y:2
+		text:"textinput"
+	FloatLayout:
+		size_hint_y:6
+		Scatter:
+			size_hint:None,None
+			size:self.size
+			center:self.parent.center
+			canvas.after:
+				Color:
+					rgba: 0, 0, 1, .4
+				Rectangle:
+					pos: self.pos
+					size: self.size
+			Label:
+				id:my_label
+				canvas:
+					Color:
+						rgba: 0, 0, 1, 1
+					Rectangle:
+						pos: self.pos
+						size: self.size
+				text:"Hello"
+				font_size:50
+	BoxLayout:
+		Button:
+			text:"press me"
+		Label:
+			text:"this is a label"

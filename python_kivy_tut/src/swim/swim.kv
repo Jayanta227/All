@@ -1,0 +1,58 @@
+#:import random random
+<Swimmers@Widget>:
+    size:10,10
+    canvas:
+        Color:
+            rgba:0,1,0,1
+        Rectangle:
+            size:self.size
+            pos:self.pos
+
+<RootWid>:
+    orientation:'vertical'
+    BoxLayout:
+        size_hint_y:None
+        height:30
+        TextInput:
+            id:t1
+            text:'5'
+        TextInput:
+            text:'4'
+            id:t2
+        Button:
+            text:'Fire!!'
+            on_press:root.do_start(int(root.ids.t1.text),int(root.ids.t2.text))
+            
+    BoxLayout:   
+        BoxLayout:
+            BoxLayout:
+                orientation:'vertical'
+                Widget:
+                    id:box
+                    canvas:
+                        Color:
+                            rgba:.5,0.2,1,1
+                        Rectangle:
+                            pos:self.pos
+                            size:self.size
+                    Swimmers:
+                        id:swimmer1
+                        pos:self.parent.pos
+                    Swimmers:
+                        id:swimmer2
+                        pos:(self.parent.pos[0],self.parent.pos[1]+30)
+
+                    
+                BoxLayout:
+                    Image:
+                        source:'img'+str(random.choice([1,2,3,4]))+'.jpg'
+                        allow_stretch:True
+                        keep_ratio:False
+        BoxLayout:
+            ScrollView:
+                Label:
+                    id:labl
+                    #text:'Iam jayanta ghosh\n'
+                    font_size:30
+                    size_hint:None,None
+                    size:self.texture_size

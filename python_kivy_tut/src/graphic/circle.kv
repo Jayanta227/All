@@ -1,0 +1,21 @@
+<RootWid>:
+	ref:bl
+	orientation:'vertical'
+	Button:
+		size_hint_y:.2
+		text:"animate"
+		on_press:root.move()
+	Button:
+		size_hint_y:.2
+		text:'update'
+		on_press:root.update()
+	BoxLayout:
+		id:bl
+		canvas:
+			Color:
+				rgba:(1,1,0,.5)
+			Rectangle:
+				id:r
+				pos:20,20
+				size:50,50
+					
