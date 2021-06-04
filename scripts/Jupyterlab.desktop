@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Jupyterlab
+#Comment=Test the terminal running a command inside it
+Exec=bash -c 'cd /home/jayanta/Documents/myvenv/pyall;source /home/jayanta/Documents/myvenv/bin/activate;jupyter-lab;$SHELL'
+Icon=/home/jayanta/.icons/Tela/scalable@3x/apps/jupyter.svg
+Terminal=true 
+Type=Application
+Categories=Application;
+Name[en_IN]=Jupyterlab

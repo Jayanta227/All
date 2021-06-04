@@ -1,0 +1,50 @@
+j bottom
+k up
+l right
+h left
+w start of next word
+e end of current word
+b backward to the start of the word
+Type a number befor command to execute command several times
+
+yy copy a whole line
+p paste clipboard
+u undo
+P paste on top of current line
+dd delete the whole line (it's in the clipboard)
+0 start of the line
+^ first word of the line
+$ end of the line
+% move to current bracket
+
+f first occurance of a characterk
+F first occurance of a character backwards
+/ search occurances (n got to next file, N go to previous one)
+? search occurances backwards (n got to next file, N go to previous one)
+
+v enter visual mode (j,k,h,l to navigate)
+V visual mode for all the line
+[in visual mode]
+< less indentation
+> more indentation
+~ change uppercase or undercase
+ab select all parenthesis
+aB select all brackets
+
+. repeat latest command
+
+} jump paragraph downwards
+{ jump paragraph upwards
+
+gd go to definition of the word under the cursor
+gf go to file for te file under the cursor
+
+gg go to top of the line
+{line}gg go to line
+
+s change a character
+x delete a character
+X delete a character before the cursor
+
+i go to insert mode before the cursor
+a go to insert mode before the cursor

@@ -1,0 +1,37 @@
+
+sudo mount -t ntfs-3g -o defaults,noatime,utf8,dmask=002,fmask=111,uid=1000,gid=1000 /dev/sda4 /media/jayanta/New\ Volume                              #mounting a ntfs drive
+sudo ntfsfix /dev/sda4                                                                                                                                 #to fix ntfs partition with windows imposed restriction
+
+
+
+
+
+
+
+
+
+
+
+
+That can be done by creating a .desktop (like jupyter.desktop) file. The file content can be like...
+```
+[Desktop Entry]
+Version=1.0
+Name=Jupyter Notebook
+Exec=bash -c 'cd /path/to/repository;source /path/to/venv/bin/activate;jupyter-notebook;$SHELL'
+Icon=utilities-terminal
+Terminal=true 
+Type=Application
+Categories=Application;
+```
+    "/path/to/reository" should be where you want to open the jupyter notebook
+    "source /path/to/venv/bin/activate" is the virtual environment activation command. Change this according to your virtual environment
+    "$SHELL" ensures not to close the shell after shutting down the kernels
+    you can give your custom icon path in place of utilities-terminal like Icon=/path/to/icon.png
+
+
+protovpn
+sudo openvpn --config us-free-01.protonvpn.com.tcp.ovpn
+eagIeZjugR7-mukWWkD2TnJQ
+eawd7ET9bZlhs4k6a0vW7Ge+
+
