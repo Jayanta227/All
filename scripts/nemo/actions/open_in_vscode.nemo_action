@@ -1,0 +1,13 @@
+[Nemo Action]
+Name=open in vscode
+Comment=open in vscode
+
+Exec=code %F
+
+Icon-Name=com.visualstudio.code
+
+Selection=Any
+
+Extensions=dir;
+EscapeSpaces=true
+

@@ -3,7 +3,7 @@ sudo mount -t ntfs-3g -o defaults,noatime,utf8,dmask=002,fmask=111,uid=1000,gid=
 sudo ntfsfix /dev/sda4                                                                                                                                 #to fix ntfs partition with windows imposed restriction
 
 
-
+ sudo adduser your_username vboxsf                                                                                                                 #add your_username to vboxsf group
 
 
 
